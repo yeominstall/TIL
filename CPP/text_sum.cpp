@@ -17,11 +17,12 @@ int main(void) {
 
   int range = (p1 > p2) ? p1 : p2;
   char sum, carry = 0;
+  char arg1, arg2;
   for (int it = 0; it <= range; it++) {
-    if (p1 > -1 && p2 > -1) {
-      sum = cstr1[p1] + cstr2[p2] + carry;
-      sum -= '0';
-    }
+    arg1 = (p1 < 0) ? '0' : cstr1[p1];
+    arg2 = (p2 < 0) ? '0' : cstr2[p2];
+    sum = arg1 + arg2 + carry;
+    sum -= '0';
     if (sum > '9') {
       carry = 1;
       sum -= 10;
