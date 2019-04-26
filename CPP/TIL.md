@@ -32,4 +32,8 @@
 ![Figure 2](text_sum_cond3_err2.png)
 6자리까진 문제 없는 것 같다.
 
-해결하고 싶은데 뇌버깅하기엔 너무 피곤 && 늦어서 여기까지.
+Resolved: End of string(or char pointer) should be NULL.
+For resolving cond 3, put '0' at the empty element.
+cond 4 is resolved by putting '0' in front of char *res
+
+cond 5 will be part of today's TIL.
