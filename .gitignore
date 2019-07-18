@@ -1,3 +1,14 @@
+# Ignore all files
+*
+
+# Unignore without extensions
+!*.*
+!*/
+
+*.txt
+
+.vscode
+
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
